@@ -1,0 +1,21 @@
+<%- include ('header/header.ejs') %>
+    <div class="container mt-5">
+      <div class="row mx-auto">
+         <div class="col-md-4">
+           <div class="card">
+             <div class="card-body">
+                <form action="/upload" method="POST" enctype="multipart/form-data">
+                 <div class="form-group">
+                   <label for="">choose a file</label>
+                   <input type="file" id="file" class="form-control" name="image">
+                 </div>
+                 <button class="btn btn-primary">upload</button>
+                </form>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-4" id="render-img"></div>
+      </div>
+    </div>
+<%- include ('footer/footer.ejs') %>
+

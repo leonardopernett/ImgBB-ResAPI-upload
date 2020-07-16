@@ -1,0 +1,19 @@
+<%- include ('header/header.ejs') %>
+    <div class="container mt-5">
+      <div class="row">
+        <% if(images) { %>
+        <%  images.forEach((image)=>{  %>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <img src="<%= image.filename %>" class="card-img-top" height="140" alt="">
+              </div>
+            </div>
+          </div>
+        <%  }) %>
+         
+         <% } %>
+      </div>
+    </div>
+<%- include ('footer/footer.ejs') %>
+

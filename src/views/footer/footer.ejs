@@ -1,0 +1,3 @@
+<script type="module" src="/js/app.js"></script>
+</body>
+</html>
